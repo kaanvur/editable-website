@@ -104,6 +104,16 @@ Just navigate to `http://127.0.0.1:5173/login` and enter your secure admin passw
 
 This repo contains the files you need to deploy your site to [fly.io](https://fly.io/).
 
+###fly.io installation on ubuntu
+```
+wget https://github.com/superfly/flyctl/releases/download/v0.1.139/flyctl_0.1.139_Linux_x86_64.tar.gz
+tar -xf flyctl_0.1.139_Linux_x86_64.tar.gz
+chmod +x flyctl
+sudo mv flyctl /usr/local/bin
+cd /usr/local/bin
+ln -s flyctl fly 
+```
+
 1. Create an account with [fly.io](https://fly.io/). (Fly [require an active, valid credit / bank card](https://fly.io/docs/about/credit-cards/) to prevent abuse, but the site runs well on their free tier. Unless you have a very busy site, hosting will be free.)
 1. [Install `fly`](https://fly.io/docs/hands-on/install-flyctl/) and sign in with `fly auth login`
 1. Clone this repo to a directory on your computer
